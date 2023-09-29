@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RunWild | Explore The World ! </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <div id="load"></div>
+    <div id="displayer" onclick="closer()"></div>
+
+
+    <div class="mobile" id="mobile-nav">
+        <p class="logo">Decorilla</p><i class="bi bi-list"></i>
+    </div>
+
+    <nav> 
+        <i class="bi bi-x-lg mobile"></i>
+        <p class="logo">Decorilla</p>
+        <a href="#" onclick="scroller('#index')">Home</a>
+        <a onclick="scroller('#gallery')">Gallery</a>
+        <a href="#" onclick="scroller('#about')">About Us</a>
+        
+        <a href="#" onclick="scroller('#contact')">Contact</a>
+    </nav>
+    <div id="index" data-aos="zoom-out" data-aos-duration="1200">
+        <img class="i1 i" src="assets/ind1.jpg">
+        <img class="i2 i" src="assets/ind2.jpg" >
+        <img class="i3 i" src="assets/ind3.jpg" >
+        <img class="i4 i" src="assets/ind4.jpg">
+    </div>
+
+    <div id="gallery">
+        <p class="p">We Turn the ordinary into Art !</p>
+        <div id="imgwrapper">
+            <img onclick="display(this)" class="img img1"  src="assets/g1.jpg" data-aos="fade-right">
+            <img onclick="display(this)" class="img img2"  src="assets/g2.jpg" data-aos="fade-right">
+            <img onclick="display(this)" class="img img3"  src="assets/g4.jpg" data-aos="fade-right">
+            <img onclick="display(this)" class="img img4"  src="assets/g3.jpg"  data-aos="fade-in">
+            <img onclick="display(this)" class="img img5"  src="assets/ind3.jpg" data-aos="zoom-out">
+            <img onclick="display(this)" class="img img6"  src="assets/g6.jpg" data-aos="zoom-in">
+        </div>
+    </div>
+
+    <div id="about">
+        <p class="p" data-aos="fade-right">SO ... , To the real question,  <b>WHY US ?</b> </p>
+        <div id="about-flex">
+            <section data-aos="zoom-in" data-aos-duration="1600">
+                <img src="assets/png2.png" alt="">
+                <p>Create a Home to Love.</p>
+            </section>
+
+            <section data-aos="zoom-out" data-aos-duration="400" >
+                <img src="assets/png1.png" alt="">
+                <p>Design is ART , WE are the maestro , YOU are the artist!</p>
+            </section>
+
+            <section data-aos="zoom-in" data-aos-duration="800">
+                <img src="assets/png7.png" alt="">
+                <p>We help you shape your dreams to ideas , Then we turn your dreams to reality.</p>
+            </section>
+
+            <section data-aos="zoom-out" data-aos-duration="1200">
+                <img src="assets/png4.png" alt="">
+                <p>Designing a healthy lifestyle, Not Just a House.</p>
+            </section>
+
+            
+        </div>
+    </div>
+
+    <div id="contact"  > 
+        <div class="p">Contact Us , Let's keep in touch !</div>
+        <form>
+            <input type="text" placeholder="Full Name">
+            <input type="number" placeholder="Phone Number" >
+            <input type="email" placeholder="Email"  >
+            <button>Sumbit</button>
+        </form>
+        <img src="assets/png7.png" alt="">
+    </div>
+
+
+<script type="text/javascript" src="script.js" ></script>
+
+</body>
+</html>
